@@ -1,0 +1,140 @@
+:root {
+    --Blue800: hsl(234, 29%, 20%);
+    --Blue700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: var(--Blue700);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.popup{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    border-radius: 24px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.circle-star{
+    background-color: #272E38;
+    height: 50px;
+    width: 50px;
+    color: hsl(217, 12%, 63%);
+    border-radius: 25px;
+    display: flex;
+    font-family: "Overpass";
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+}
+
+.circle{
+    background-color: #272E38;
+    height: 50px;
+    width: 50px;
+    color: hsl(217, 12%, 63%);
+    border-radius: 25px;
+    display: flex;
+    font-family: "Overpass";
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+}
+
+.circle:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(213, 19%, 18%);  
+    cursor: pointer;
+}
+
+.circle:hover:active{
+    background-color: hsl(25, 85%, 44%);
+}
+
+.circle:disabled{
+    background-color: white;
+    color: #272E38;
+}
+
+
+
+.title{
+    color: var(--Blue800);
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Roboto";
+}
+
+.text{
+    color: var(--Blue800);
+    font-size: 15px;
+    margin: 20px 0px;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: "Roboto";
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+}
+
+.submit{
+    background-color: var(--Blue800);
+    height: 50px;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: white; 
+    border-width: 0px;
+}
+
+.submit:hover{
+    background-color: hsl(25, 85%, 44%);
+    color: hsl(213, 19%, 18%);  
+    cursor: pointer;
+}
+
+.submit:hover:active{
+    background-color: hsl(25, 81%, 36%);
+    color: var(--Blue800);  
+}
+
+.photo{
+    width: 300px;
+}
