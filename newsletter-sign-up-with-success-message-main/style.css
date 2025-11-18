@@ -3,6 +3,10 @@
     --Blue700: hsl(235, 18%, 26%);
     --Grey: hsl(0, 0%,58%);
     --White: hsl(0, 0%, 100%);
+    font-family: "Roboto";
+    color: var(--Blue800);
+    font-weight: 400;
+    font-size: 16px;
 }
 
 html{
@@ -20,12 +24,13 @@ body{
 }
 
 .popup{
-    width: 600px;
-    height: 400px;
+    width:840px;
+    height: 600px;
     background-color: white;
     border-radius: 24px;
     display: grid;
     padding: 20px;
+    align-items: center;
     grid-template-columns: auto auto;
 }
 
@@ -42,32 +47,78 @@ grid{
     height: auto;
 }
 
-.circle-star{
-    background-color: #272E38;
-    height: 50px;
-    width: 50px;
-    color: hsl(217, 12%, 63%);
-    border-radius: 25px;
-    display: flex;
-    font-family: "Overpass";
-    font-weight: 700;
-    justify-content: center;
-    align-items: center;
-    border-width: 0px;
+.left{
+    padding: 40px;
 }
 
-.circle{
+/* .circle-star{
     background-color: #272E38;
     height: 50px;
     width: 50px;
     color: hsl(217, 12%, 63%);
     border-radius: 25px;
     display: flex;
-    font-family: "Overpass";
+    font-family: "Roboto";
     font-weight: 700;
     justify-content: center;
     align-items: center;
     border-width: 0px;
+} */
+
+.title{
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.text{
+    margin: 20px 0px;
+}
+/* .numbers{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+} */
+
+/* .circle{
+    background-color: var(--Blue800);
+    height: 50px;
+    width: 50px;
+    color: hsl(217, 12%, 63%);
+    border-radius: 25px;
+    display: flex;
+    font-family: "Roboto";
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+} */
+
+.email{
+    padding: 20px 0px 0px;
+    font-weight: 900;
+}
+
+input{
+    width: -webkit-fill-available;
+    height: 40px;
+    border-radius: 8px;
+    border-color: var(--Grey);
+    border-width: 1px;
+    border-style: solid;
+    padding: 0px 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+
+
+.bulletPoint{
+    color: var(--Blue800);
+    font-family: "Roboto";
+    line-height: 2.2;
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 .circle:hover{
@@ -87,44 +138,20 @@ grid{
 
 
 
-.title{
-    color: var(--Blue800);
-    font-size: 25px;
-    font-weight: 900;
-    font-family: "Roboto";
-}
-
-.text{
-    color: var(--Blue800);
-    font-size: 15px;
-    margin: 20px 0px;
-    font-weight: 400;
-    line-height: 1.8;
-    font-family: "Roboto";
-}
-.numbers{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    justify-content: space-between;
-}
 
 .submit{
     background-color: var(--Blue800);
     height: 50px;
     width: -webkit-fill-available;
-    border-radius: 10px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-    font-family: "Roboto";
-    font-weight: 400;
     color: white; 
     border-width: 0px;
 }
 
-.submit:hover{
+/* .submit:hover{
     background-color: hsl(25, 85%, 44%);
     color: hsl(213, 19%, 18%);  
     cursor: pointer;
@@ -133,8 +160,4 @@ grid{
 .submit:hover:active{
     background-color: hsl(25, 81%, 36%);
     color: var(--Blue800);  
-}
-
-.photo{
-    width: 300px;
-}
+} */
